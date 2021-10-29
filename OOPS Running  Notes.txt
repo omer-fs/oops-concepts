@@ -1,0 +1,120 @@
+Classes and Objects
+    Foundation and building blocks of programming
+    Class - user defined blueprint or design from which objects are created
+    Class contains attriubets and varaiables
+    Example of Architect for building a colony, he needs a blue print for better results
+        With the same blueprint the builder can create colonies in any cities
+    Another example: Dog it has various attributes like color, it walks, it barks,
+        state: color
+        behaviour walking and barking
+    To define Class
+    <Modifier> class <ClassName>
+    {
+    //Varaibles
+    //Methods
+    }
+    To create an object
+    <Class name> <object name> = new <contstructor>;
+
+
+Variables, Methods & Constructors
+Vairables
+    Instance Variables - defined inside the class but outside the methods
+    Local Variables - defined inside the methods or blocks or contstructors
+    Static Variables - defined inside the class but outside the methods with static keyword
+    A single copy of static variable is defined for all the objects
+Constructors
+    Default - if we do not mention any constructor, then this is created autmoatically
+    Non-parameterized - if we do not define constructor with parameters
+    Parameterized - if we define constructor with parameters
+Methods
+    To define a Method
+    <Modifier> <return type> <Method name> (<parameters>)
+    {
+        <method-body>
+    }
+    To call a method
+    <object>.<method name>(<parameters>);
+
+
+Packages, Import Keyword
+    Package - a mechanism to keep group of classes, subpackages, interfaces which has similar functionalities
+    Package provides a folder structure to organise classes & interfaces
+
+
+Access Modifiers
+    Modifiers set the accesssibliy of classes or methods or any members
+    Public, Private, Protected, Default
+    Public - class can be accessed everywhere
+    Default - scope of default is limited to package only
+    Private - cannot be accessed outside the class, i.e., scope is inside the class
+    Protected - scope is withing same package and within the subclass of same package or different package with subclass reference
+    we cannot add access modifier to local varaibles
+    A class or an outer class cannot be defined private or protected
+    Inner classes can be private or protected
+    Note: in java there is no concept of package inheritence
+
+
+Non-Access Modifier, Abstract
+    Abstract Class & Methods
+    abstract <Class Name> {
+    //it is not fully implemented
+    }
+    abstract <Class Name> {
+    abstract void <methodName>();
+    //doesn't have impelmentation
+    }
+    Abstract methods can be created in abstract class only
+    Child class is responsible for defining the methods of abstract class
+    In simple terms abstract classes are incomplete classes
+    Note: we cannot create objects of abstract class, i.e., abstract classes cannot be instatiated
+
+
+Non-Access Modifier Static Final
+    Final- when added that variable or method cannot be reinstantiated
+    Static - Static vairables are class variables which get memory only once during the class loading
+    Static variables do not need objects, they can be called using the class itself
+
+
+Arrays, Collections, Concurrent Collections, Generics, Lambda, Streams and Prallel Streams
+
+
+Introduction of OOPS
+
+
+Data Hiding
+    It is a technique to hide internal object details i.e., data members.
+    only after the validation the user should get the access
+
+
+Interfaces and Abstract Classes
+    Abstraction in java is achieved by using abstract classes and interfaces
+    Interface- it is a blueprint of class, which specifies what class has to do but not how to do
+    <modifier>interface <interface name>{
+        <modifier> <return type> <method name>();
+        <modifier> <return type> <method name>();
+        <modifier> <return type> <method name>();
+    }
+    Java 1.7 Interfaces -> abstract methods
+    Java 1.8 Interfaces -> abstract, default, static methods
+    Java 1.9 Interfaces -> abstract, default, static, private methods
+
+
+Abstraction
+    Hiding the internal implementation and showing the required details
+
+
+Encapsulation
+    Grouping up of data members and member functions in a single unit, is Encapsulation
+
+
+Inheritence
+    Inheritence-IS-A Relationship
+    Associaton-HAS-A Relationship
+    Diff b/w IS-A and HAS-A relationships
+    Inheritence is a mechanism to create a new class, deriving the old class
+    Single Inheritence
+    Multilevel Inheritence
+    Mulitple Inheritence
+    Hierarchical Inheritence
+    Hybrid Inheritence
