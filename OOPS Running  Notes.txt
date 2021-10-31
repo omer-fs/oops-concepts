@@ -109,7 +109,7 @@ Encapsulation
 
 
 Inheritence
-    Inheritence-IS-A Relationship
+    inheritence-IS-A Relationship
     Associaton-HAS-A Relationship
     Diff b/w IS-A and HAS-A relationships
     Inheritence is a mechanism to create a new class, deriving the old class
@@ -118,3 +118,38 @@ Inheritence
     Mulitple Inheritence
     Hierarchical Inheritence
     Hybrid Inheritence
+
+
+Types of Inheritence
+	Single Inhertience: one parent, one child
+	Multilevel Inheritence: one parent one child conitnues for more than one generation
+	Mulitple Inheritance: it is achieved by using interfaces, mulitple parent one child
+	Hierarchical Inheritance: one parent more than one child
+	Hybrid: combination of mulitple and multilevel inheritance
+	Cyclic: if a class extends itself then its called as cyclic, i.e., A extends B and B extends A, this is not required in java
+
+
+Association
+	HAS-A relationship
+	Establishing relationship between two different classes through their objects
+	There are two forms of associations
+	Aggregations: an association is said to be aggregation if both the entities that are associated can exist independenlty
+	example: college has-a teacher, office has-a employee, since teacher can exist without college and college can exist without a particular teacher
+	in simple words aggreagtion is where one quantity contains other one but both can survive independently
+	Code-reuse is best achieved by aggregation
+Composition
+	Stronger form of association
+	Two entites are highly dependent on each other
+	The contained object cannot survive without the container object.
+	
+
+Polymorphism-Method Signature
+	In java Polymorphism is the ability of an object to take many forms
+	Method Siganture
+	<Method name>(<Argument types>)
+
+
+Method Overloading
+	same name with different argument list
+	Early binding at the time of compilation, the method calls are resolved by the compiler
+	
